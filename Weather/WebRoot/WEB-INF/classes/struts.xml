@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" namespace="/" extends="json-default">
+	
+		<!-- 三个城市对比 -->
+		
+		<action name="check_BJ"  class="com.checkWeather"  method="check_BJ">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		<action name="check_SH"  class="com.checkWeather"  method="check_SH">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		<action name="check_GZ"  class="com.checkWeather"  method="check_GZ">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+		
+		
+		<!-- 查询历史天气数据 -->
+		<action name="checkHistory"  class="com.checkWeather"  method="checkHistory">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+	
+		<!-- AQI地图中显示AQI值 -->
+		<action name="getdata"  class="com.checkWeather"  method="checkAQI">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+		<!-- 温度地图中显示温度 -->
+		<action name="getTemperdata"  class="com.checkWeather"  method="checkTemper">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+
+		<!-- AQI地图中显示有AQI数据的城市 -->
+		<action name="getAQIlocation"  class="com.checkWeather"  method="location_hasAQI">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+		<!-- 温度地图中显示所有城市 -->
+		<action name="getAlllocation"  class="com.checkWeather"  method="location_all">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+		<!-- 获得地点未来五天的数据 -->
+		<action name="getPageShow"  class="com.checkWeather"  method="pageshow">
+			 <result type="json"><param name="result">result</param></result>  
+		</action>
+		
+		
+		
+		
+	</package>
+</struts>    

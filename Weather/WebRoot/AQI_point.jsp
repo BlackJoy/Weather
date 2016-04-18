@@ -17,14 +17,11 @@
     <meta content="0" name="is-login">
     <meta content="1" name="is-open">
     <link href="./css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="./css/common.css">
     <link rel="stylesheet" media="screen" href="./css/font-awesome.min.css">
     <link rel="stylesheet" media="screen" href="./css/es-icon.css">
-    <link rel="stylesheet" media="screen" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="./css/AQIShow.css">
-    <link rel="stylesheet" type="text/css" href="./css/main_v2.css">
-    <script type="text/javascript" src="./js/jquery-1.5.1.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="./js/index-nav.js"></script>
 </head>
 
@@ -70,7 +67,7 @@
                 <div class="line"></div>
             </h2>
         </div>
-        <div id="map_container"></div>
+        <div id="map_container" style="width: 100%; height: 90%"></div>
         <script type="text/javascript" src="<%=basePath%>js/echarts.js"></script>
         <script type="text/javascript" src="<%=basePath%>js/china.js"></script>
         <script type="text/javascript" src="<%=basePath%>echarts/jquery.min.js"></script>

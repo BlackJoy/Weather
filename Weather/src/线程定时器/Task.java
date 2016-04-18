@@ -48,7 +48,7 @@ public class Task extends TimerTask {
         int num = 0;
         for( String cityname : citylist ){
         	
-        	System.out.println(cityname+"������");
+        	System.out.println(cityname+"开始处理");
         	
         	Document doc = null;
     		try {
@@ -267,7 +267,7 @@ public class Task extends TimerTask {
         	
     		num++;
         	
-    		System.out.println(cityname+"������ϣ��۹�������"+num);
+    		System.out.println(cityname+"处理完成"+num);
     		
 
         	

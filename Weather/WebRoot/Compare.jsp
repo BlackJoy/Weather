@@ -169,7 +169,7 @@
         }
         function finddata_BJ() {
             var arr = new Array();
-            alert("北京");
+            
             var year = $("#year").val();
             var month = $("#month").val();
             $.ajax({
@@ -210,7 +210,7 @@
         }
         function finddata_SH() {
             var arr = new Array();
-            alert("上海");
+           
             var year = $("#year").val();
             var month = $("#month").val();
             $.ajax({
@@ -251,7 +251,7 @@
         }
         function finddata_GZ() {
             var arr = new Array();
-            alert("广州");
+            
             var year = $("#year").val();
             var month = $("#month").val();
             $.ajax({

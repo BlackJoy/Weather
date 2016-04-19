@@ -36,13 +36,13 @@
         <nav class="collapse navbar-collapse pull-left">
             <ul class="nav navbar-nav topmenu">
                 <li class="">
-                    <a href="http://localhost:8080/AQI_point.jsp/">首页 </a>
+                    <a href="http://localhost:8080/AQI_point.jsp">首页 </a>
                 </li>
                 <li class="">
-                    <a href="http://www.howzhi.com/courses">排行榜 </a>
+                    <a href="http://localhost:8080/History.jsp">AQI查询 </a>
                 </li>
                 <li class="">
-                    <a href="http://www.howzhi.com/classroom/poster/list">AQI百科 </a>
+                    <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
                 </li>
             </ul>
         </nav>

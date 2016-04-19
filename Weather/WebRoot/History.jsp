@@ -44,13 +44,13 @@
         <nav class="collapse navbar-collapse pull-left">
             <ul class="nav navbar-nav topmenu">
                 <li class="">
-                    <a href="http://localhost:8080/AQI_point.jsp/">首页 </a>
+                    <a href="http://localhost:8080/AQI_point.jsp">首页 </a>
                 </li>
                 <li class="">
-                    <a href="http://www.howzhi.com/courses">排行榜 </a>
+                    <a href="http://localhost:8080/History.jsp">AQI查询 </a>
                 </li>
                 <li class="">
-                    <a href="http://www.howzhi.com/classroom/poster/list">AQI百科 </a>
+                    <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
                 </li>
             </ul>
         </nav>
@@ -636,7 +636,7 @@
             return arr;
         }
     </script>
-    <form style="height: 50px; font-size: 16px">
+    <form style="height: 50px; font-size: 16px; padding-left: 100px">
         <div class="styled-select">
         省份: &nbsp;<select id="province" name="province" onChange="selectCity()">
         <option>请选择</option>
@@ -827,6 +827,7 @@
             ],
             title: {
                 text: '城市历史数据展示',
+                top: 20 ,
                 left: 'center',
                 textStyle: {
                     color: '#fff'
@@ -841,9 +842,9 @@
                 }
             },
             grid: {
-                x: '10%',
+                x: '5%',
                 x2: 150,
-                y: '18%',
+                y: '12%',
                 y2: '10%'
             },
             tooltip: {
@@ -951,7 +952,7 @@
             },
             visualMap: [
                 {
-                    left: '90%',
+                    left: '88%',
                     top: '20%',
                     dimension: 2,
                     min: 0,
@@ -982,7 +983,7 @@
                     }
                 },
                 {
-                    left: '91%',
+                    left: '88%',
                     bottom: '20%',
                     dimension: 6,
                     min: 0,

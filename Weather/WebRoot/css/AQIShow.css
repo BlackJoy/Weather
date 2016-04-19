@@ -191,7 +191,11 @@ form .btn.btn-primary {
 }
 
 .container {
-  width: 1000px;
+    width: 1000px;
+}
+
+.hot-tag .container {
+    width: 1200px;
 }
 
 .form-control {
@@ -1153,7 +1157,7 @@ button.btn.btn-lg.btn-block.btn-default.dropdown-toggle {
 .hz-section {
     position: relative;
     padding: 20px 0 6px 0;
-    width: 1000px;
+    width: 1200px;
     height: 700px;
     margin: 0 auto;
 }

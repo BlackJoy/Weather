@@ -21,7 +21,7 @@
     <meta name="renderer" content="webkit">
     <meta name="baidu-site-verification" content="XN2OVFQdUg">
     <title>
-        AQIHistory </title>
+        AQIShow </title>
     <meta content="0" name="is-login">
     <meta content="1" name="is-open">
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="./css/AQIShow.css">
     <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="./js/index-nav.js"></script>
+    <script type="text/javascript" src="./js/setOption.js"></script>
 </head>
 
 <body class="index">
@@ -51,6 +52,9 @@
                 </li>
                 <li class="">
                     <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
+                </li>
+                <li class="">
+                    <a href="http://localhost:8080/Temperture.jsp">TEMP显示 </a>
                 </li>
             </ul>
         </nav>

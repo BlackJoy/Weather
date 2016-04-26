@@ -44,6 +44,9 @@
                 <li class="">
                     <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
                 </li>
+                <li class="">
+                    <a href="http://localhost:8080/Temperture.jsp">TEMP显示 </a>
+                </li>
             </ul>
         </nav>
         <ul class="nav user-nav pull-right">
@@ -320,7 +323,7 @@
                 <div class="col-md-6">
                     <ul class="">
                         <li class="col-xs-5 item-s">
-                            <a href="http://www.howzhi.com/tag/%E9%A9%BE%E9%A9%B6">
+                            <a href="History.jsp?province=jiangsu&city=changzhou">
                                 <img src="./res/changzhou.jpg" alt="常州">
                                 <span class="label label-b label-md">常州</span>
                             </a>

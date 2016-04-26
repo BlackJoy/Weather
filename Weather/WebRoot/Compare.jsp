@@ -52,6 +52,9 @@
                 <li class="">
                     <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
                 </li>
+                <li class="">
+                    <a href="http://localhost:8080/Temperture.jsp">TEMP显示 </a>
+                </li>
             </ul>
         </nav>
         <ul class="nav user-nav pull-right">

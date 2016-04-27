@@ -318,30 +318,31 @@
                 <div class="line"></div>
             </h2>
         </div>
-        <div class="section-body">
+       <div class="section-body">
             <div class="hot-tag-main tag-hide row" style="display: block;">
                 <div class="col-md-6">
                     <ul class="">
                         <li class="col-xs-5 item-s">
-                            <a href="History.jsp?province=jiangsu&city=changzhou">
+                        <!--  -->
+                            <a href="http://www.tianqihoubao.com/yubao/changzhou.html">
                                 <img src="./res/changzhou.jpg" alt="常州">
                                 <span class="label label-b label-md">常州</span>
                             </a>
                         </li>
                         <li class="col-xs-7 item-s">
-                            <a href="http://www.howzhi.com/tag/After%20Effect">
+                            <a href="http://www.tianqihoubao.com/yubao/yangzhou.html">
                                 <img src="./res/yangzhou.jpg" alt="扬州">
                                 <span class="label label-b label-md">扬州</span>
                             </a>
                         </li>
                         <li class="col-xs-7 item-l">
-                            <a href="http://www.howzhi.com/tag/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1">
+                            <a href="http://www.tianqihoubao.com/yubao/zhenjiang.html">
                                 <img src="./res/zhenjiang.jpg" alt="镇江">
                                 <span class="label label-b label-md">镇江</span>
                             </a>
                         </li>
                         <li class="col-xs-5 item-l">
-                            <a href="http://www.howzhi.com/tag/%E8%8B%B1%E8%AF%AD">
+                            <a href="http://www.tianqihoubao.com/yubao/wuxi.html">
                                 <img src="./res/wuxi.jpg" alt="无锡">
                                 <span class="label label-b label-md">无锡</span>
                             </a>
@@ -351,25 +352,25 @@
                 <div class="col-md-6">
                     <ul class="">
                         <li class="col-xs-7 item-l">
-                            <a href="http://www.howzhi.com/tag/%E5%88%9B%E6%84%8F%E6%91%84%E5%BD%B1">
+                            <a href="http://www.tianqihoubao.com/yubao/maanshan.html">
                                 <img src="./res/maanshan.jpg" alt="马鞍山">
                                 <span class="label label-b label-md">马鞍山</span>
                             </a>
                         </li>
                         <li class="col-xs-5 item-l">
-                            <a href="http://www.howzhi.com/tag/PHP">
+                            <a href="http://www.tianqihoubao.com/yubao/wuhu.html">
                                 <img src="./res/wuhu.jpg" alt="芜湖">
                                 <span class="label label-b label-md">芜湖</span>
                             </a>
                         </li>
                         <li class="col-xs-5 item-s">
-                            <a href="http://www.howzhi.com/tag/%E9%9F%B3%E9%A2%91%E5%88%B6%E4%BD%9C">
+                            <a href="http://www.tianqihoubao.com/yubao/chuzhou.html">
                                 <img src="./res/chuzhou.jpg" alt="滁州">
                                 <span class="label label-b label-md">滁州</span>
                             </a>
                         </li>
                         <li class="col-xs-7 item-s">
-                            <a href="http://www.howzhi.com/tag/Excel">
+                            <a href="http://www.tianqihoubao.com/yubao/huaian.html">
                                 <img src="./res/huaian.jpg" alt="淮安">
                                 <span class="label label-b label-md">淮安</span>
                             </a>

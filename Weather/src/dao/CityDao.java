@@ -26,6 +26,29 @@ public class CityDao {
 	public static PreparedStatement pst = null; 
 
 
+	public String getCityCode(String cityname){
+		String code = null;
+		try {  
+			Class.forName(name);//
+			conn = (Connection) DriverManager.getConnection(url, user, password);//
+			pst = conn.prepareStatement(" select code from dic where name='"+cityname+"'");//
+			ResultSet rs =  (ResultSet) pst.executeQuery();
+			
+			//if(rs == null)  return null;
+			
+			
+			while(rs.next()){
+				code = rs.getString("code");
+			}
+			pst.close(); 
+			conn.close();
+
+		} catch (Exception e) {  
+			e.printStackTrace();  
+		}
+		return code;
+	}
+	
 	
 	public List<History> check_His_AQI(String date,String cityname) {  
 
@@ -40,8 +63,18 @@ public class CityDao {
 		try {  
 			Class.forName(name);//
 			conn = (Connection) DriverManager.getConnection(url, user, password);//
-			pst = conn.prepareStatement(" select * from AQI aq  where aq.AQI_point !=0 and date like '"+date+"%'  and city_name = '"+cityname+"'  ");//
+			
+			pst = conn.prepareStatement("select name from dic where code = '"+cityname+"' ");
 			ResultSet rs =  (ResultSet) pst.executeQuery();
+			
+			String city_name_CH="";
+			while(rs.next()){
+				city_name_CH = rs.getString("name");
+				
+			}
+			
+			pst = conn.prepareStatement(" select * from AQI aq  where aq.AQI_point !=0 and date like '"+date+"%'  and city_name in ('"+cityname+"','"+city_name_CH+"' ) ");//
+			 rs =  (ResultSet) pst.executeQuery();
 			
 			//if(rs == null)  return null;
 			

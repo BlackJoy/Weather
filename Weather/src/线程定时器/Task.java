@@ -40,8 +40,8 @@ public class Task extends TimerTask {
 		}
 
         
-        //��ѯ���еĳ���
-        //�����еĳ��н��б���
+        //循环访问所有城市
+        //获取城市天气页面信息
         
         
         List<String> citylist = toDatabase.findAllCity();
@@ -53,7 +53,7 @@ public class Task extends TimerTask {
         	Document doc = null;
     		try {
     			doc = (Document) Jsoup.connect("http://wthrcdn.etouch.cn/WeatherApi?city="+URLEncoder.encode(cityname, "UTF-8"))
-    					  .timeout(5000000)
+    					  .timeout(5000)
     					  .data("query", "Java")
     					  .userAgent("Mozilla")
     					  .cookie("auth", "token")
@@ -61,9 +61,11 @@ public class Task extends TimerTask {
     		} catch (UnsupportedEncodingException e) {
     			// TODO Auto-generated catch block
     			e.printStackTrace();
+    			continue;
     		} catch (IOException e) {
     			// TODO Auto-generated catch block
     			e.printStackTrace();
+    			continue;
     		}
     		
     		
@@ -76,8 +78,8 @@ public class Task extends TimerTask {
     		//String test = readHtml("http://www.tianqihoubao.com/lishi/");
     		
     		
-    		//��������״��
-    		//�еĻ���ʱ��AQI���в������
+    		//获取有AQI数据的城市的天气信息
+    		//将AQI数据放入AQI数据表中
     		
     		Elements environment = doc.select("environment");
     		
@@ -127,12 +129,12 @@ public class Task extends TimerTask {
     			} catch (SQLException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
-    			}   //��Ԥ����д洢AQI
+    			}   
     			
     		}
     		
     		
-    		// ��ʱ�¶����
+    		// 预测信息
     		Elements forecast = doc.select("forecast");
     		Elements weathers = doc.select("weather");
     		
@@ -217,7 +219,10 @@ public class Task extends TimerTask {
     			
 
     		//-------------------------------------
-    		//�����¶���ݹ鵵-----------------------------
+    		//归档昨天的信息-----------------------------
+    		
+    		
+    		try{
     		
     		Temper temper = new Temper();
     		
@@ -265,6 +270,13 @@ public class Task extends TimerTask {
     			e.printStackTrace();
     		}
         	
+    		
+    		}catch(Exception e){
+    			num++;
+    			continue;
+    		}
+    		
+    		
     		num++;
         	
     		System.out.println(cityname+"处理完成"+num);

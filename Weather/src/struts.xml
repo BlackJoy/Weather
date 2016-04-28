@@ -21,7 +21,7 @@
 		<action name="checkHistory"  class="com.checkWeather"  method="checkHistory">
 			 <result type="json"><param name="result">result</param></result>  
 		</action>
-		
+
 	
 		<!-- AQI地图中显示AQI值 -->
 		<action name="getdata"  class="com.checkWeather"  method="checkAQI">

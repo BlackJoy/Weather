@@ -29,23 +29,23 @@
 <header class="header">
     <div class="container">
         <div class="navbar-header">
-            <a href="http://localhost:8080/Weather/AQI_point.jsp" class="navbar-brand">
+            <a href="./main.html" class="navbar-brand">
                 <img src="./res/logo.png" class="img-responsive">
             </a>
         </div>
         <nav class="collapse navbar-collapse pull-left">
             <ul class="nav navbar-nav topmenu">
                 <li class="">
-                    <a href="http://localhost:8080/Weather/AQI_point.jsp">首页 </a>
+                    <a href="http://localhost:8080/AQI_point.jsp">首页 </a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:8080/Weather/History.jsp">AQI查询 </a>
+                    <a href="http://localhost:8080/History.jsp">AQI查询 </a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:8080/Weather/Compare.jsp">AQI对比 </a>
+                    <a href="http://localhost:8080/Compare.jsp">AQI对比 </a>
                 </li>
                 <li class="">
-                    <a href="http://localhost:8080/Weather/Temperture.jsp">TEMP显示 </a>
+                    <a href="http://localhost:8080/Temperture.jsp">TEMP显示 </a>
                 </li>
             </ul>
         </nav>

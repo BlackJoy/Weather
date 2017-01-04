@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import com.mysql.jdbc.Connection;
 
@@ -135,34 +133,6 @@ public class toDatabase {
 	
 	
 	
-	public static void saveCityList(List ls) throws ClassNotFoundException, SQLException{
-		Class.forName(name);//
-		conn = (Connection) DriverManager.getConnection(url, user, password);
-      
-		
-		for(int i =0 ;i<ls.size();i++){
-			
-			String [] temp_arr = (String[]) ls.get(i);
-			String key = temp_arr[0];
-			String value = temp_arr[1];
-
-			
-			 try {  
-		           	String sql="insert into dic(code,name) values ('"+key+"','"+value+"')";
-		            pst = conn.prepareStatement(sql);//
-		            pst.execute();
-		            pst.close(); 
-		           
-		            
-		        } catch (Exception e) {  
-		            e.printStackTrace();  
-		        }
-			 
-			 
-		}
-		
-		
-		conn.close();
-	}
+	
 	
 }	

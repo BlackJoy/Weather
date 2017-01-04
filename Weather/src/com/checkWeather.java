@@ -55,6 +55,8 @@ public class checkWeather {
 		response.setContentType("text/html; charset=utf-8");
 		//调用JSONArray.fromObject方法把array中的对象转化为JSON格式的数组
 
+		
+		
 		JSONArray json=JSONArray.fromObject( array1  );
 		System.out.println(json.toString());
 		//返回给前段页面
@@ -259,9 +261,12 @@ public class checkWeather {
 	public void checkHistory() throws IOException{
 
 		HttpServletRequest request = ServletActionContext.getRequest();
+		request.setCharacterEncoding("utf-8");
 		HttpServletResponse response= ServletActionContext.getResponse();
 
 
+		String type = request.getParameter("type");
+	
 		String province = request.getParameter("province");
 		String city = request.getParameter("city");
 		String year = request.getParameter("year");
@@ -277,21 +282,25 @@ public class checkWeather {
 
 		//baishan  黄颜色
 		//anshun  绿色
-
-		List<History> his_AQI = citydao.check_His_AQI(year+"-"+month, "anshun");
+	
+		String citycode = citydao.getCityCode(city);
+		
+		List<History> his_AQI = citydao.check_His_AQI(year+"-"+month,citycode);
 
 
 		//cityls=citydao.findAll_haveAQI();
 
-
+		
 
 		JSONArray json=JSONArray.fromObject(   his_AQI  );
 		System.out.println(json.toString());
 		//返回给前段页面
+		
 		PrintWriter out = response.getWriter();  
 		out.println(json);  
 		out.flush();  
 		out.close();
+	
 
 	}
 
